@@ -1,0 +1,44 @@
+.movie__item-wrapper {
+    width: 20%;
+}
+
+.movie__item{
+    background: #ccc;
+    width: 225px;
+    height: 335px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    margin: 0 50px 50px 0;
+
+    .movie__item-img{
+        background-size: cover !important;
+        width: 100%;
+        height: 100%;
+        transform: scale(100%);
+    }
+
+    .movie__item-title{
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translateX(-50%);
+        color: #fff;
+        background: rgba(80, 12, 27, 0.85);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+        transition: opacity .3s ease-out;
+    }
+
+    &:hover{
+        .movie__item-title{
+            opacity: 1;
+        }
+    }
+}

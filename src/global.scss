@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', 'Montserrat', sans-serif;
+    &::selection {
+        color: #fff;
+        background: #D45D79;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1280px;
+}
